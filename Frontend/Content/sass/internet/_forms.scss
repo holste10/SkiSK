@@ -1,0 +1,38 @@
+input {
+  border: 1px solid $border-color;
+  height: 30px;
+  padding: 0px 5px;
+  font-family: Arial, sans-serif;
+}
+
+.header-search {
+  position: relative;
+  height: 32px;
+  width: 100%;
+  max-width: 285px;
+  display: inline-block;
+  padding-right: 45px;
+  border: 1px solid $border-color-light;
+
+
+  input {
+    display: block;
+    width: 100%;
+    border: none;
+    font-style: italic;
+  }
+
+  button {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 30px;
+    margin: 0px;
+    color: $search-button-text-color;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+    background-color: $search-button-color;
+    border: 1px solid $border-color;
+    padding: 0px 15px;
+    cursor: pointer;
+  }
+}

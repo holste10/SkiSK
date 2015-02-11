@@ -1,0 +1,81 @@
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &:before,
+  &:after {
+    font-family: 'icomoon';
+  }
+}
+
+.icon-phone:before {
+  content: "\66";
+}
+.icon-envelope:before {
+  content: "\65";
+}
+.icon-location:before {
+  content: "\64";
+}
+.icon-mobile:before {
+  content: "\63";
+}
+.icon-search:before {
+  content: "\61";
+}
+.icon-menu:before {
+  content: "\62";
+}
+.icon-facebook:before {
+  content: "\31";
+}
+.icon-facebook2:before {
+  content: "\32";
+}
+.icon-facebook3:before {
+  content: "\33";
+}
+.icon-instagram:before {
+  content: "\37";
+}
+.icon-twitter:before {
+  content: "\34";
+}
+.icon-twitter2:before {
+  content: "\35";
+}
+.icon-twitter3:before {
+  content: "\36";
+}
+
+.icon-circle-container {
+  @include border-radius(60px);
+  position: relative;
+  border: 1px solid $border-color-light;
+  text-align: center;
+  display: inline-block;
+  font-size: 2.2em;
+  width: 70px;
+  height: 70px;
+
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    color: $border-color-light;
+
+    @include transform(translate(-50%, -50%));
+  }
+}

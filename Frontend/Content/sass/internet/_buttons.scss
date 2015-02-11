@@ -1,0 +1,18 @@
+
+.rounded-button {
+  @include border-radius(15px);
+  display: inline-block;
+  background-color: $search-button-color;
+  color: $search-button-text-color;
+  padding: 10px 15px;
+
+  &:hover,
+  &:active {
+    color: $search-button-text-color;
+    text-shadow: 0 1px 1px $shadow-invert;
+  }
+
+  &.air {
+    margin: 5px;
+  }
+}

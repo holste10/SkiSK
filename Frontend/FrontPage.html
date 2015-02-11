@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta id="ctl00_viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <title></title>
+    <link rel="stylesheet" href="Content/css/internet/screen.css">
+
+    <script>
+        function initHeader() {
+            var menuButton = document.querySelector(".menu-button");
+            menuButton.addEventListener("click", onMenuButtonClick.bind(this));
+        }
+
+        function onMenuButtonClick(event) {
+            var menuContainer = document.querySelector(".main.mobile");
+
+            var displayMode = menuContainer.style.display;
+            if(displayMode === "" || displayMode === "none") {
+                menuContainer.style.display = "block";
+            } else {
+                menuContainer.style.display = "none";
+            }
+        }
+
+        window.addEventListener("load", function() {
+            initHeader();
+        });
+    </script>
+</head>
+<body>
+<header class="page-header">
+    <div class="header-body wrapper">
+        <div class="logo-wrapper">
+            <a href="#" title="Gå til forside">
+                <img src="Images/logo.png" alt="logo" class="logo">
+            </a>
+        </div>
+        <div class="content">
+            <nav class="main desktop">
+                <ul>
+                    <li><a href="#" class="active">Nyheter</a></li>
+                    <li><a href="#">Kurs</a></li>
+                    <li><a href="#">Klubben</a></li>
+                    <li><a href="#">Konkuranser</a></li>
+                    <li><a href="#">Badene</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <fieldset class="header-search">
+                    <input type="text" placeholder="Søk">
+                    <button type="submit" class="icon-search"></button>
+                </fieldset>
+            </div>
+            <div class="menu-button-container">
+                <a href="#" class="icon-search search-button"></a>
+                <a class="icon-menu menu-button"></a>
+            </div>
+        </div>
+
+        <nav class="main mobile">
+            <ul>
+                <li><a href="#" class="active">Nyheter</a></li>
+                <li><a href="#">Kurs</a></li>
+                <li><a href="#">Klubben</a></li>
+                <li><a href="#">Konkuranser</a></li>
+                <li><a href="#">Badene</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="main-content">
+    <section class="front-page">
+        <div class="banner gray">
+            <div class="wrapper">
+                <img src="Images/fp-banner.jpg" alt="forside banner logo svømmere">
+            </div>
+        </div>
+
+        <div class="wrapper">
+
+            <section class="news-feed cropped common">
+                <div class="featured news news-container">
+                    <img src="Images/svommere.jpg" alt="svommere">
+                    <div class="image-text">
+                        <h1>Oppstart trening for A- og B-gruppa m.m.</h1>
+                        <p>
+                            Treningen for A- og B-gruppa starter igjen mandag 11. august. Treningen vil foregå fra kl. 09:30 til kl. 11:30 t.o.m. lørdag 16. august.
+                            Fra og med  mandag 18. august gjelder vanlige treningstider for alle gruppene inntil annen beskjed blir gitt.
+                        </p>
+                    </div>
+                </div>
+                <div class="news-4-4 news-container">
+                    <div class="news">
+                        <img src="Images/svommere.jpg" alt="svommere">
+                        <div class="image-text">
+                            <h1>Oppstart trening for A- og B-gruppa m.m.</h1>
+                            <p>
+                                Treningen for A- og B-gruppa starter igjen mandag 11. august. Treningen vil foregå fra kl. 09:30 til kl. 11:30 t.o.m. lørdag 16. august.
+                                Fra og med  mandag 18. august gjelder vanlige treningstider for alle gruppene inntil annen beskjed blir gitt.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="news">
+                        <img src="Images/svommere.jpg" alt="svommere">
+                        <div class="image-text">
+                            <h1>Oppstart trening for A- og B-gruppa m.m.</h1>
+                            <p>
+                                Treningen for A- og B-gruppa starter igjen mandag 11. august. Treningen vil foregå fra kl. 09:30 til kl. 11:30 t.o.m. lørdag 16. august.
+                                Fra og med  mandag 18. august gjelder vanlige treningstider for alle gruppene inntil annen beskjed blir gitt.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="news">
+                        <img src="Images/svommere.jpg" alt="svommere">
+                        <div class="image-text">
+                            <h1>Oppstart trening for A- og B-gruppa m.m.</h1>
+                            <p>
+                                Treningen for A- og B-gruppa starter igjen mandag 11. august. Treningen vil foregå fra kl. 09:30 til kl. 11:30 t.o.m. lørdag 16. august.
+                                Fra og med  mandag 18. august gjelder vanlige treningstider for alle gruppene inntil annen beskjed blir gitt.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="news">
+                        <img src="Images/svommere.jpg" alt="svommere">
+                        <div class="image-text">
+                            <h1>Oppstart trening for A- og B-gruppa m.m.</h1>
+                            <p>
+                                Treningen for A- og B-gruppa starter igjen mandag 11. august. Treningen vil foregå fra kl. 09:30 til kl. 11:30 t.o.m. lørdag 16. august.
+                                Fra og med  mandag 18. august gjelder vanlige treningstider for alle gruppene inntil annen beskjed blir gitt.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-list news-container">
+                    <div class="news">
+                        <img src="Images/svommere.jpg" alt="svommere">
+                        <div class="image-text">
+                            <h1>Oppstart trening for A- og B-gruppa m.m.</h1>
+                            <p>
+                                Treningen for A- og B-gruppa starter igjen mandag 11. august. Treningen vil foregå fra kl. 09:30 til kl. 11:30 t.o.m. lørdag 16. august.
+                                Fra og med  mandag 18. august gjelder vanlige treningstider for alle gruppene inntil annen beskjed blir gitt.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="news">
+                        <img src="Images/svommere.jpg" alt="svommere">
+                        <div class="image-text">
+                            <h1>Oppstart trening for A- og B-gruppa m.m.</h1>
+                            <p>
+                                Treningen for A- og B-gruppa starter igjen mandag 11. august. Treningen vil foregå fra kl. 09:30 til kl. 11:30 t.o.m. lørdag 16. august.
+                                Fra og med  mandag 18. august gjelder vanlige treningstider for alle gruppene inntil annen beskjed blir gitt.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="news">
+                        <img src="Images/svommere.jpg" alt="svommere">
+                        <div class="image-text">
+                            <h1>Oppstart trening for A- og B-gruppa m.m.</h1>
+                            <p>
+                                Treningen for A- og B-gruppa starter igjen mandag 11. august. Treningen vil foregå fra kl. 09:30 til kl. 11:30 t.o.m. lørdag 16. august.
+                                Fra og med  mandag 18. august gjelder vanlige treningstider for alle gruppene inntil annen beskjed blir gitt.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="news">
+                        <img src="Images/svommere.jpg" alt="svommere">
+                        <div class="image-text">
+                            <h1>Oppstart trening for A- og B-gruppa m.m.</h1>
+                            <p>
+                                Treningen for A- og B-gruppa starter igjen mandag 11. august. Treningen vil foregå fra kl. 09:30 til kl. 11:30 t.o.m. lørdag 16. august.
+                                Fra og med  mandag 18. august gjelder vanlige treningstider for alle gruppene inntil annen beskjed blir gitt.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="news">
+                        <img src="Images/svommere.jpg" alt="svommere">
+                        <div class="image-text">
+                            <h1>Oppstart trening for A- og B-gruppa m.m.</h1>
+                            <p>
+                                Treningen for A- og B-gruppa starter igjen mandag 11. august. Treningen vil foregå fra kl. 09:30 til kl. 11:30 t.o.m. lørdag 16. august.
+                                Fra og med  mandag 18. august gjelder vanlige treningstider for alle gruppene inntil annen beskjed blir gitt.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <aside class="side-panel">
+               <div class="common-box">
+                   <div class="box-body">
+                       <p><strong>Velkommen</strong> her kan du lese om Ski Svømmeklubb</p>
+                   </div>
+               </div>
+                <div class="common-box">
+                    <div class="box-body">
+                        <h3>Velkommen</h3>
+                        <p>Her kan du lese nyheter fra våre idrettsgrener og grupper. Klubbmedlemmer kan også logge seg inn på våre hjemmesider ved å benytte seg av sitt brukernavn og passord fra minidrett.no
+                           Som klubbmedlem har du her tilgang både til blogg og bildegalleri som vi håper du benytter til å publisere innhold, nyheter og resultater fra din idrettshverdag i klubben vår.
+                           Tilbake til forsiden!</p>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </section>
+</div>
+
+<footer class="page-footer">
+    <div class="footer-body wrapper">
+        <div class="footer-cell socials">
+            <a class="icon-circle-container social-link" href="https://www.facebook.com/skisvommeklubb" title="Gå til ssk's facebook side">
+                <span>1</span>
+            </a>
+            <a class="icon-circle-container social-link" title="Send oss en melding">
+                <span>e</span>
+            </a>
+            <a class="icon-circle-container social-link" title="Finn badene våre">
+                <span>d</span>
+            </a>
+        </div>
+        <div class="footer-cell">
+            <p>
+                Lurer du på noe?
+                <a href="#">Send oss en E-post</a> så svarer vi deg.
+            </p>
+        </div>
+        <div class="footer-cell">
+            <p>Ønsker du å bli medlem eller melde dine barn på kurs?</p>
+            <a href="#" class="rounded-button air">Gå til innmeldingsskjema</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

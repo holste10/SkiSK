@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta id="ctl00_viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <title></title>
+    <link rel="stylesheet" href="Content/css/internet/screen.css">
+
+    <script>
+        function initHeader() {
+            var menuButton = document.querySelector(".menu-button");
+            menuButton.addEventListener("click", onMenuButtonClick.bind(this));
+        }
+
+        function onMenuButtonClick(event) {
+            var menuContainer = document.querySelector(".main.mobile");
+
+            var displayMode = menuContainer.style.display;
+            if(displayMode === "" || displayMode === "none") {
+                menuContainer.style.display = "block";
+            } else {
+                menuContainer.style.display = "none";
+            }
+        }
+
+        window.addEventListener("load", function() {
+            initHeader();
+        });
+    </script>
+</head>
+<body>
+    <header class="page-header">
+        <div class="header-body wrapper">
+            <div class="logo-wrapper">
+                <a href="#" title="Gå til forside">
+                    <img src="Images/logo.png" alt="logo" class="logo">
+                </a>
+            </div>
+            <div class="content">
+                <nav class="main desktop">
+                    <ul>
+                        <li><a href="#" class="active">Nyheter</a></li>
+                        <li><a href="#">Kurs</a></li>
+                        <li><a href="#">Klubben</a></li>
+                        <li><a href="#">Konkuranser</a></li>
+                        <li><a href="#">Badene</a></li>
+                    </ul>
+                </nav>
+                <div class="search-container">
+                    <fieldset class="header-search">
+                        <input type="text" placeholder="Søk">
+                        <button type="submit" class="icon-search"></button>
+                    </fieldset>
+                </div>
+                <div class="menu-button-container">
+                    <a href="#" class="icon-search search-button"></a>
+                    <a class="icon-menu menu-button"></a>
+                </div>
+            </div>
+
+            <nav class="main mobile">
+                <ul>
+                    <li><a href="#" class="active">Nyheter</a></li>
+                    <li><a href="#">Kurs</a></li>
+                    <li><a href="#">Klubben</a></li>
+                    <li><a href="#">Konkuranser</a></li>
+                    <li><a href="#">Badene</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-content"></div>
+
+    <footer class="page-footer">
+        <div class="footer-body wrapper">
+            <div class="footer-cell socials">
+                <a class="icon-circle-container social-link" href="https://www.facebook.com/skisvommeklubb" title="Gå til ssk's facebook side">
+                    <span>1</span>
+                </a>
+                <a class="icon-circle-container social-link" title="Send oss en melding">
+                    <span>e</span>
+                </a>
+                <a class="icon-circle-container social-link" title="Finn badene våre">
+                    <span>d</span>
+                </a>
+            </div>
+            <div class="footer-cell">
+                <p>
+                    Lurer du på noe?
+                    <a href="#">Send oss en E-post</a> så svarer vi deg.
+                </p>
+            </div>
+            <div class="footer-cell">
+                <p>Ønsker du å bli medlem eller melde dine barn på kurs?</p>
+                <a href="#" class="rounded-button air">Gå til innmeldingsskjema</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

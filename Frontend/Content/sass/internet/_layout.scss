@@ -1,0 +1,31 @@
+section.cropped {
+  padding: 10px;
+  width: 100%;
+}
+
+aside.side-panel {
+  padding: 10px;
+  width: 100%;
+}
+
+footer.page-footer {
+  margin-top: 40px;
+}
+
+@media all and (min-width: $tablet-width) {
+
+  section.cropped {
+    width: 70%;
+    display: inline-block;
+    margin-right: -4px;
+    vertical-align: top;
+  }
+
+  aside.side-panel {
+    display: inline-block;
+    width: 30%;
+    margin-right: -4px;
+    vertical-align: top;
+  }
+}
+

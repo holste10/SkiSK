@@ -1,0 +1,44 @@
+footer.page-footer {
+  min-height: $footer-height;
+  background-color: $footer-color;
+  border-top: 5px solid $header-color;
+
+  .footer-body {
+     min-height: inherit;
+  }
+
+  .footer-cell {
+    padding: 1em 20px;
+    text-align: center;
+  }
+
+  .social-link {
+    cursor: pointer;
+    margin: 5px;
+
+    &:hover {
+      background-color: $social-color-link;
+      span {
+        color: $social-color-link-text;
+      }
+    }
+  }
+}
+
+@media all and (min-width: $tablet-width) {
+  footer.page-footer {
+    display: table;
+    width: 100%;
+
+    .footer-cell {
+      display: table-cell;
+      width: 33.33333333333333%;
+      vertical-align: middle;
+    }
+
+    .socials {
+      text-align: left;
+      padding: 4.5em 0px;
+    }
+  }
+}
