@@ -1,0 +1,17 @@
+@import "../../framework/_settings";
+
+$columns: 12;
+@while $columns > 0 {
+  .span-#{$columns} {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+
+    @include breakpoint(tablet) {
+      display: inline-block;
+      vertical-align: top;
+      width: percentage((1 / 12) * $columns);
+    }
+  }
+  $columns: $columns - 1;
+}

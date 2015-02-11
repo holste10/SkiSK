@@ -1,0 +1,57 @@
+
+
+*, *:before, *:after {
+  @include box-sizing(border-box);
+  @include input-placeholder {
+    color: #bfbfbf;
+    font-style: italic;
+  }
+  font-family: Arial, sans-serif;
+}
+
+p {
+  font-size: 16px;
+  line-height: 22px;
+  font-family: Arial, sans-serif;
+}
+
+h1,h2,h3 {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+body {
+  //  background-color: ;
+}
+
+a {
+  color: $link-standar-color;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+
+  &:hover,
+  &:active {
+    color: $link-standar-color-hover;
+    text-decoration: underline;
+  }
+}
+
+
+input {
+  border: 1px solid $border-color;
+  height: 30px;
+  padding: 0px 5px;
+  font-family: Arial, sans-serif;
+}

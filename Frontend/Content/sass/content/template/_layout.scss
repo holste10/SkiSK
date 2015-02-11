@@ -29,3 +29,23 @@ footer.page-footer {
   }
 }
 
+.wrapper {
+  width: 100%;
+  max-width: $max-page-width;
+  margin: 0px auto;
+}
+
+.main-content {
+  min-height: 700px;
+}
+
+.non-markable {
+  @include non-markable;
+}
+
+.row-container {
+  width: 100%;
+  > div {
+    margin-right: -4px;
+  }
+}
